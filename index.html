@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:300,400" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <meta name="viewport" content="user-scalable = yes, width=320, initial-scale=1">
+    <title></title>
+  </head>
+  <body>
+    <!-- <button type="button" name="button" id="scrollMe">scroll next</button> -->
+    <!-- ================ -->
+    <div class="masthead-fixed" id="masthead-fixed">
+      <div class="masthead-relative">
+        <!-- ================ -->
+        <aside class="alt-nav">
+          <a href="#"><i class="material-icons">shopping_cart</i></a>
+          <button type="button" name="button" id="phone-btn"><i class="material-icons">phone</i></button>
+        </aside>
+        <div class="logo">
+          <img src="images/whaleLogo.png" alt="">
+        </div>
+        <div class="nav-cont">
+          <button type="button" class="menu-btn" name="button" id="menu-btn">
+            <hr class="menu-btn-hr-1"/>
+            <hr class="menu-btn-hr-2"/>
+            <hr class="menu-btn-hr-3"/>
+          </button>
+          <nav class="main-nav">
+            <a href="#">home</a>
+            <a href="#">about</a>
+            <a href="#">contact</a>
+            <a href="#">charters</a>
+          </nav>
+        </div>
+        <div class="phone" id="phone">
+          <ul>
+            <li class="phone-left"><a href="#"><span>(Toll Free)</span> 1-866-482-9775</a></li>
+            <li class="phone-right"><a href="#"><span>(Local)</span> 808-892-2082</a></li>
+          </ul>
+        </div>
+        <!-- ================ -->
+      </div>
+    </div>
+    <!-- ================ -->
+    <div id="checkpoint-first" class="checkpoint-first active">
+      <div class="banner">
+        <article>
+          <h2>an experience larger than life</h2>
+          <h1>discount oauh whale watching charters</h1>
+        </article>
+      </div>
+    </div>
+    <!-- =========== products ============ -->
+    <div class="checkpoint">
+      <div class="product" id="product">
+        <div class="product-header">
+          <h3>start your adventure</h3>
+          <p><b>choose below</b> from any of the best whale watching charters on oahu</p>
+        </div>
+        <section>
+          <ul>
+            <li id="p-btn-1"><button class="product-button" href="#">hawaii nautical</button></li>
+            <li id="p-btn-2"><button class="product-button" href="#">north shore<br/>charters</button></li>
+            <li id="p-btn-3"><button class="product-button" href="#">star of<br/>hololulu</button></li>
+          </ul>
+        </section>
+      </div>
+      <!-- ============================ -->
+      <div class="product-detail" id="product-1">
+        <button class="prev-btn" type="button" onclick="tabToggle(3,'product-detail',' active')"><i class="material-icons">chevron_left</i></button>
+        <button class="next-btn" type="button" onclick="tabToggle(2,'product-detail',' active')"><i class="material-icons">chevron_right</i></button>
+        <section>
+          <header>
+              <h2>hawaii nautical</h2>
+              <button class="closeBtn" type="button" name="button"><i class="material-icons">cancel</i></button>
+            </header>
+            <article>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <a href="#">learn more</a>
+            </article>
+        </section>
+      </div>
+      <!-- ============================ -->
+      <div class="product-detail" id="product-2">
+        <button class="prev-btn" type="button" onclick="tabToggle(1,'product-detail',' active')"><i class="material-icons">chevron_left</i></button>
+        <button class="next-btn" type="button" onclick="tabToggle(3,'product-detail',' active')"><i class="material-icons">chevron_right</i></button>
+        <section>
+          <header>
+            <h2>north shore charters</h2>
+            <button class="closeBtn" type="button" name="button"><i class="material-icons">cancel</i></button>
+          </header>
+          <article>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <a href="#">learn more</a>
+          </article>
+        </section>
+      </div>
+      <!-- ============================ -->
+      <div class="product-detail" id="product-3">
+        <button class="prev-btn" type="button" onclick="tabToggle(2,'product-detail',' active')"><i class="material-icons">chevron_left</i></button>
+        <button class="next-btn" type="button" onclick="tabToggle(1,'product-detail',' active')"><i class="material-icons">chevron_right</i></button>
+        <section>
+          <header>
+            <h2>star of honolulu</h2>
+            <button class="closeBtn" type="button" name="button"><i class="material-icons">cancel</i></button>
+          </header>
+          <article>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <a href="#">learn more</a>
+          </article>
+        </section>
+      </div>
+      <!-- ============================ -->
+    </div>
+    <!-- ============================ -->
+    <div class="checkpoint">
+
+    <div class="article-section" id="article-section">
+      <header>
+        tagline text goes here
+      </header>
+      <article class="article-page active">
+        <p>During the winter months from December through April, thousands of Pacific humpback whales migrate from their summer feeding grounds off Alaska to the warm Hawaiian waters to mate and nurse their young. Whale watching is one of the most popular activities on Oahu during this time.</p>
+        <nav>
+          <button type="button" onclick="tabToggle(2,'article-page',' active')"><i class="material-icons">chevron_left</i></button>
+          <span>1/2</span>
+          <button type="button" onclick="tabToggle(1,'article-page',' active')"><i class="material-icons">chevron_right</i></button>
+        </nav>
+      </article>
+      <article class="article-page">
+        <p>An Oahu whale watching cruise allows you to see humpback whales up close. These cruises take you along the beautiful shoreline of Waikiki Beach or along the island’s scenic west shore. Find the best Oahu whale watching cruises at discounted rates right here.</p>
+        <nav>
+          <button type="button" onclick="tabToggle(1,'article-page',' active')"><i class="material-icons">chevron_left</i></button>
+          <span>2/2</span>
+          <button type="button" onclick="tabToggle(2,'article-page',' active')"><i class="material-icons">chevron_right</i></button>
+        </nav>
+      </article>
+    </div>
+
+    </div>
+    <!-- ============================ -->
+    <div class="checkpoint">
+      <div class="coverage-section" id="coverage-section">
+        <header>we've got you covered</header>
+        <section>
+          <ul id="coverage-list">
+            <li>
+              <img src="images/lock.png" alt="">
+              <h2>Safe And Secure</h2>
+              <p>safe, secure online booking system with validated privacy protection.</p>
+            </li>
+            <li>
+              <img src="images/moneyback.png" alt="">
+              <h2>Money Back Guarantee</h2>
+              <p>receive a full refund if cancellation is made at least 48 hours in advance.</p>
+            </li>
+            <li>
+              <img src="images/arrow.png" alt="">
+              <h2>Same Day Reservations</h2>
+              <p>receive your voucher the same day after booking your tour or activity.</p>
+            </li>
+            <li>
+              <img src="images/headset.png" alt="">
+              <h2>Friendly Support</h2>
+              <p>our sales representatives help you select the best activities and ensure 100% satisfaction.</p>
+            </li>
+          </ul>
+        </section>
+      </div>
+    </div>
+    <!--========= -->
+    <!-- ============================ -->
+    <div class="social">
+      <header>follow us</header>
+      <nav>
+        <a href="#"> <img src="images/fb.png" alt=""> </a>
+        <a href="#"> <img src="images/ig.png" alt=""> </a>
+        <a href="#"> <img src="images/tw.png" alt=""> </a>
+      </nav>
+    </div>
+    <!-- ============================ -->
+    <footer>
+      <p> Copyright (c) 2018 Copyright Holder All Rights Reserved. </p>
+      <ul>
+        <li><a href="#">home</a></li>
+        <li><a href="#">contact</a></li>
+        <li><a href="#">privacy policy</a></li>
+        <li><a href="#">terms</a></li>
+        <li><a href="#">site map</a></li>
+        <li><a href="#">login</a></li>
+      </ul>
+    </footer>
+    <!-- =========================== -->
+    <script type="text/javascript" src="toggle.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+  </body>
+</html>
