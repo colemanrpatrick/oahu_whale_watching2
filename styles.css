@@ -983,3 +983,59 @@ body.active::after{
   }
 }
 /*=========*/
+.social {
+  background-color: #196bcd;
+  padding: 3em;
+}
+.social nav {
+  margin: 0 auto;
+  display: table;
+}
+.social nav a{
+   display: table-cell;
+   width: 33.3%;
+}
+.social header {
+  color: white;
+  display: table;
+  font-weight: 300;
+  margin: 1em auto;
+  font-size: 35px;
+  text-transform: capitalize;
+}
+/*=========*/
+footer {
+  background-color: #333;
+  text-align: center;
+}
+footer p{
+  color: white;
+  font-weight: 300;
+  padding: 2em;
+}
+footer ul {
+  display: table;
+  width: 100%;
+}
+footer ul li {
+  display: table-cell;
+  width: 16.7%;
+  color: white !important;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 300;
+  padding: 1em;
+}
+footer ul li a{
+  color: gold !important;
+  font-size: 20px;
+}
+@media(max-width:600px){
+  footer ul li {
+    display: inline-block;
+    width: 33.3%;
+  }
+  footer ul li a{
+    font-size: 16px;
+  }
+}
